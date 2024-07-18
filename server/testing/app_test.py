@@ -166,7 +166,7 @@ class TestApp:
             prices = [baked_good.price for baked_good in BakedGood.query.all()]
             highest_price = max(prices)
 
-            b1 = BakedGood(name="Madeleine", price=highest_price + 1)
+            b1 = BakedGood(name="Delightful donuts", price=highest_price + 1)
             db.session.add(b1)
             db.session.commit()
             b2 = BakedGood(name="Donut", price=highest_price - 1)
